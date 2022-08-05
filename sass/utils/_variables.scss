@@ -1,0 +1,33 @@
+/* --Колір заголовків - #212121 */
+/* Колір лого - #000000 */
+/* --Вторинний колір - #FFFFFF */
+/* --Колір тексту - #757575*/
+/* --Інтерактивний колір - #2196F3 */
+/* --Колір фону первинний - #FFFFFF */
+/* --Колір фону вторинний - #E5E5E5 */
+/* --Колір фону третинний - #F5F4FA */
+/* --Колір фону герой та футер - #2F303A */
+
+/* transition: [property] [duration] [timing-function] [delay] */
+
+:root {
+    --primary-headlines-color: #212121;
+    --secondary-text-color: #FFFFFF;
+    --text-color: #757575;
+    --interactive-color: #2196F3;
+    --accent-color-shadow: #188ce8;
+    --primary-bcg-color: #FFFFFF;
+    --secondary-bcg-color: #E5E5E5;
+    --trethiary-bcg-color: #F5F4FA;
+    --hero-bcg-color: #2F303A;
+    --overlay-color: rgba(47, 48, 58, 0.4);
+    --secondary-overlay-color: rgba(47, 48, 58, 0.8);
+    --icon-color: #AFB1B8;
+    --form-border-color: rgba(255, 255, 255, 0.3);
+    --form-text-color: rgba(255, 255, 255, 0.6);
+
+    --font-family-primary: 'Roboto', sans-serif;
+
+    --transition-duration: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1)
+}

@@ -1,0 +1,21 @@
+/* Logo */
+
+.logo {
+    @media screen and (max-width: 479.5px) {
+        margin-left: 15px;
+        margin-top: 26px;
+        margin-bottom: 26px;
+    }
+
+    color: #000000;
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+}
+
+.logo__color--interactive {
+    color: var(--interactive-color)
+}
