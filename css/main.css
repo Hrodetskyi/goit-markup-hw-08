@@ -157,7 +157,7 @@ p {
 }
 
 .nav__button {
-  position: absolute;
+  position: fixed;
   right: 10px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
