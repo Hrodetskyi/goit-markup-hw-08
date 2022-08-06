@@ -1592,7 +1592,6 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: -15px;
 }
 @media screen and (min-width: 480px) {
   .card-set {
