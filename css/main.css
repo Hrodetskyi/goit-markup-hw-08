@@ -488,8 +488,8 @@ p {
   max-height: 400px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo480.jpg");
-  background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo480.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo480.jpg");
+  background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo480.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -502,32 +502,32 @@ p {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo480@2x.jpg");
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo480@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo480@2x.jpg");
   }
 }
 @media (min-width: 481px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo768.jpg");
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo768.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo768.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo768.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo768@2x.jpg");
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo768@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo768@2x.jpg");
   }
 }
 @media (min-width: 769px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo1600.jpg");
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo1600.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo1600.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo1600.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo1600@2x.jpg");
-    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo1600@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("../images/img/hero-photo1600@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("../images/img/hero-photo1600@2x.jpg");
   }
 }
 .hero {
@@ -1625,12 +1625,16 @@ body {
 }
 @media screen and (min-width: 768px) {
   .card-set__item {
-    width: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 60px) / 2);
+        flex-basis: calc((100% - 60px) / 2);
+    width: 354px;
   }
 }
 @media screen and (min-width: 1200px) {
   .card-set__item {
-    width: calc((100% - 90px) / 3);
+    -ms-flex-preferred-size: calc((100% - 90px) / 3);
+        flex-basis: calc((100% - 90px) / 3);
+    width: 370px;
   }
 }
 
@@ -1652,7 +1656,6 @@ body {
 
 .card-set__sub {
   width: 100%;
-  height: 100%;
   padding-top: 20px;
   padding-bottom: 20px;
   padding-left: 24px;
@@ -1666,6 +1669,9 @@ body {
 .card-set__box {
   position: relative;
   overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .card-set__overlay {

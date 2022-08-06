@@ -88,11 +88,13 @@ body {
     width: 450px;
 
     @media screen and (min-width: 768px) {
-        width: calc((100% - 2   * 30px) / 2);
+        flex-basis: calc((100% - 2   * 30px) / 2);
+        width: 354px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: calc((100% - 3 * 30px) / 3);
+        flex-basis: calc((100% - 3 * 30px) / 3);
+        width: 370px;
     }
 }
 
@@ -110,12 +112,10 @@ body {
 
 .card-set__sub {
     width: 100%;
-    height: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 24px;
     padding-right: 24px;
-
     border-bottom: 1px solid #EEEEEE;
     border-left: 1px solid #EEEEEE;
     border-right: 1px solid #EEEEEE;
@@ -125,6 +125,7 @@ body {
 .card-set__box {
     position: relative;
     overflow: hidden;
+    flex-grow: 1;
 }
 
 .card-set__overlay {
