@@ -115,13 +115,11 @@ p {
 
 /* Site-nav */
 .site-nav {
-  position: relative;
   background-color: var(--primary-bcg-color);
   border-bottom: 1px solid #ECECEC;
 }
 
 .nav {
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,9 +188,9 @@ p {
 
 .nav__container {
   display: none;
-  position: absolute;
+  position: fixed;
   overflow-y: scroll;
-  top: 100%;
+  top: 0px;
   left: 0px;
   background-color: var(--primary-bcg-color);
   z-index: 2;
@@ -202,7 +200,6 @@ p {
 .nav__container.is-open {
   display: block;
   width: 100%;
-  height: 796px;
   overflow: hidden;
 }
 @media screen and (min-width: 768px) {
