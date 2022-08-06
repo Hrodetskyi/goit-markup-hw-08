@@ -504,27 +504,32 @@ p {
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/img/hero-photo480@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo480@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo480@2x.jpg");
   }
 }
 @media (min-width: 481px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/img/hero-photo768.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo768.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo768.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/img/hero-photo768@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo768@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo768@2x.jpg");
   }
 }
 @media (min-width: 769px), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/img/hero-photo1600.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo1600.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo1600.jpg");
   }
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .overlay {
-    background-image: url("/images/img/hero-photo1600@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, left bottom, from(var(--overlay-color)), to(var(--overlay-color))), url("/images/img/hero-photo1600@2x.jpg");
+    background-image: linear-gradient(var(--overlay-color), var(--overlay-color)), url("/images/img/hero-photo1600@2x.jpg");
   }
 }
 .hero {

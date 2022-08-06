@@ -22,7 +22,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: url("/images/img/hero-photo480@2x.jpg");
+            background-image:
+            linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("/images/img/hero-photo480@2x.jpg");
         }
     }
 
@@ -30,7 +33,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: url("/images/img/hero-photo768.jpg");
+            background-image:
+            linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("/images/img/hero-photo768.jpg");
         }
     }
 
@@ -38,7 +44,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: url("/images/img/hero-photo768@2x.jpg");
+            background-image:
+            linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("/images/img/hero-photo768@2x.jpg");
         }
     }
 
@@ -46,7 +55,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: url("/images/img/hero-photo1600.jpg");
+            background-image:
+            linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("/images/img/hero-photo1600.jpg");
         }
     }
 
@@ -54,7 +66,10 @@
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         .overlay {
-            background-image: url("/images/img/hero-photo1600@2x.jpg");
+            background-image:
+            linear-gradient(var(--overlay-color),
+            var(--overlay-color)),
+        url("/images/img/hero-photo1600@2x.jpg");
         }
     }
 
