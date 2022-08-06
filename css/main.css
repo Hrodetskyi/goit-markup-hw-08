@@ -1620,6 +1620,10 @@ body {
 }
 
 .card-set__item {
+  border-bottom: 1px solid #EEEEEE;
+  border-left: 1px solid #EEEEEE;
+  border-right: 1px solid #EEEEEE;
+  background-color: var(--primary-bcg-color);
   margin: 15px;
   width: 450px;
 }
@@ -1660,18 +1664,11 @@ body {
   padding-bottom: 20px;
   padding-left: 24px;
   padding-right: 24px;
-  border-bottom: 1px solid #EEEEEE;
-  border-left: 1px solid #EEEEEE;
-  border-right: 1px solid #EEEEEE;
-  background-color: var(--primary-bcg-color);
 }
 
 .card-set__box {
   position: relative;
   overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
 }
 
 .card-set__overlay {
@@ -1711,6 +1708,10 @@ body {
 }
 
 .card-set__subject {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   color: var(--primary-headlines-color);
   font-weight: 700;
   font-size: 18px;
@@ -1719,6 +1720,10 @@ body {
 }
 
 .card-set__name {
+  display: block;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.9;
