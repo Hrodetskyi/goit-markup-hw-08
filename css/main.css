@@ -157,7 +157,7 @@ p {
 }
 
 .nav__button {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   display: -webkit-inline-box;
@@ -168,6 +168,11 @@ p {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   z-index: 4;
+}
+.nav__button.is-open {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 @media screen and (min-width: 768px) {
   .nav__button {
